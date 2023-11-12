@@ -71,46 +71,11 @@
   transition: 0.8s;
 }
 
-.carousel-caption .carousel-content a button.carousel-content-btn1 {
-  opacity: 1;
-  border: 0;
-  border-radius: 20px;
-}
-
-.carousel-caption .carousel-content a button.carousel-content-btn1:hover {
-  color: #ffffff;
-  border: 0;
-  opacity: 1;
-  transition: 1s;
-  border-radius: 20px;
-}
-
-.carousel-caption .carousel-content a button.carousel-content-btn2 {
-  opacity: 1;
-  border: 0;
-  border-radius: 20px;
-}
-
-.carousel-caption .carousel-content a button.carousel-content-btn2:hover {
-  border: 0;
-  opacity: 1;
-  transition: 1s;
-  border-radius: 20px;
-}
-
-#carouselId .carousel-indicators li {
-  width: 30px;
-  height: 30px;
-  margin: 10px;
-  border-radius: 50%;
-  opacity: 1;
-}
-
-#carouselId .carousel-indicators li:hover {
-  opacity: 1;
-}
-
 /* akademik */
+.scroll {
+  flex: 1;
+  flex-wrap: nowrap;
+}
 .card {
   transition: all 0.15s ease;
 }
@@ -136,6 +101,10 @@
 .container img {
   transition: 0.4s ease;
   cursor: pointer;
+}
+
+.scroll .card .card-body .btn:hover {
+  opacity: 1;
 }
 
 /* footer */
