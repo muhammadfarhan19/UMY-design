@@ -1,3 +1,22 @@
+:root {
+
+  --color-primary: #004029;
+  --color-secondary: #F6B800;
+  --color-accent: #932520;
+}
+
+.color-primary {
+  background-color: var(--color-primary);
+}
+
+.color-secondary {
+  background-color: var(--color-secondary);
+}
+
+.color-accent {
+  color: var(--color-accent);
+}
+
 .carousel-item {
   position: relative;
 }
@@ -92,6 +111,85 @@
   opacity: 1;
 }
 
+/* footer */
+
+li {
+  list-style: none;
+}
+
+.social-icon li i {
+  font-size: 14px;
+  color: #262725;
+  border: solid 2px #ffffff;
+  height: 31px;
+  width: 31px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100px;
+  line-height: 27px;
+  margin-right: 15px;
+  transition: 1s;
+  background: #fff;
+}
+.social-icon li i:hover {
+  border: solid 2px #262725;
+  color: #ffffff;
+  background: #262725;
+}
+
+.footer-top p {
+  font-size: 13px;
+  line-height: 2;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 32px;
+}
+.address1 li {
+  list-style: none;
+  position: relative;
+  padding: 0px 0 14px 34px;
+  line-height: 26px;
+}
+ul.address1 span {
+  position: absolute;
+  width: 40px;
+  max-width: 40px;
+  left: 0;
+}
+.address1 li a {
+  color: #fff;
+  text-decoration: none;
+}
+ul.address1 i {
+  width: 20px;
+  position: absolute;
+  left: 0px;
+  text-align: center;
+  font-size: 28px;
+  top: 0;
+}
+
+ul.address1 i.fa-envelope {
+  font-size: 18px;
+  top: 4px;
+}
+footer ul.social-icon {
+  float: left;
+}
+footer .social-icon li i:hover {
+  background: #4b8800;
+  border-color: #4b8800;
+}
+
+.copyright {
+  font-size: 18px;
+}
+
 @media (max-width: 992px) {
   .carousel-item {
     min-height: 500px;
@@ -122,23 +220,10 @@
   }
 
   .carousel-item h1 {
-    font-size: 28px !important;
+    font-size: 20px !important;
   }
 
   .carousel-item p {
     font-size: 14px !important;
   }
 }
-
-/* .page-header {
-  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/carousel-1.jpg) center center no-repeat;
-  background-size: cover;
-}
-
-.page-header .breadcrumb-item+.breadcrumb-item::before {
-}
-
-.page-header .breadcrumb-item,
-.page-header .breadcrumb-item a {
-  font-size: 18px;
-} */
