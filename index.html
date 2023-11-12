@@ -10,19 +10,22 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- nav -->
-    <nav class="navbar navbar-expand-xl sticky-top shadow-lg bg-light">
+    <nav class="navbar navbar-expand-xl sticky-top shadow-lg color-primary">
       <div class="container d-lg-flex justify-content-start">
         <button
           class="navbar-toggler"
@@ -55,36 +58,32 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="offcanvas-body">
-            <div class="navbar-nav d-flex">
+          <div class="offcanvas-body color-primary">
+            <div class="navbar-nav d-flex gap-2">
               <a
-                class="nav-item nav-link color-primary text-light my-2 rounded-3 p-3"
+                class="nav-item nav-link text-light my-2 rounded-3 p-3 color-secondary"
                 href="#"
                 >Beranda</a
               >
-              <a class="nav-item nav-link my-2 rounded-3 p-3" href="#"
+              <a
+                class="nav-item nav-link text-light my-2 rounded-3 p-3"
+                href="#"
                 >Profile</a
               >
-              <a class="nav-item nav-link my-2 rounded-3 p-3" href="#"
-                >Akademik</a
-              >
-              <a class="nav-item nav-link my-2 rounded-3 p-3" href="#"
+              <a
+                class="nav-item nav-link text-light my-2 rounded-3 p-3"
+                href="#"
                 >Pendaftaran</a
               >
-              <a class="nav-item nav-link my-2 rounded-3 p-3" href="#"
-                >Kehidupan Kampus</a
+              <a
+                class="nav-item nav-link text-light my-2 rounded-3 p-3"
+                href="#"
+                >Pendidikan</a
               >
-              <a class="nav-item nav-link my-2 rounded-3 p-3" href="#"
-                >Internasional</a
-              >
-              <a class="nav-item nav-link my-2 rounded-3 p-3" href="#"
-                >Alumni</a
-              >
-              <a class="nav-item nav-link my-2 rounded-3 p-3" href="#"
-                >Webmail</a
-              >
-              <a class="nav-item nav-link my-2 rounded-3 p-3" href="#"
-                >UMY Virtual Tour</a
+              <a
+                class="nav-item nav-link text-light my-2 rounded-3 p-3"
+                href="#"
+                >Kontak</a
               >
             </div>
           </div>
@@ -93,7 +92,7 @@
     </nav>
 
     <!-- carousel -->
-    <div class="container-fluid px-0 h-50">
+    <div class="container-fluid px-0">
       <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
@@ -106,9 +105,7 @@
               <div
                 class="container carousel-content d-flex flex-column h-100 justify-content-evenly"
               >
-                <h1 class="text-white fw-bold">
-                  Welcome to
-                </h1>
+                <h1 class="text-white fw-bold">Welcome to</h1>
                 <h1 class="text-capitalize text-white">
                   universitas muhammadiyah yogyakarta
                 </h1>
@@ -123,7 +120,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="carousel-item active">
+          <div class="carousel-item active">
             <img
               src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.campustimesug.com%2Fwp-content%2Fuploads%2F2019%2F09%2FUniversitas-Muhammadiyah-Yogyakarta.jpeg&f=1&nofb=1&ipt=05887f6549958fcbaca98b274056c50a36f5c67f746fe73aa16e9eef316daf10&ipo=images"
               class="img-fluid"
@@ -133,9 +130,7 @@
               <div
                 class="container carousel-content d-flex flex-column h-100 justify-content-evenly"
               >
-                <h1 class="text-white fw-bold">
-                  Welcome to
-                </h1>
+                <h1 class="text-white fw-bold">Welcome to</h1>
                 <h1 class="text-capitalize text-white">
                   universitas muhammadiyah yogyakarta
                 </h1>
@@ -149,7 +144,7 @@
                 >
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
         <button
           class="carousel-control-prev"
@@ -173,41 +168,45 @@
     </div>
 
     <!-- PMB -->
-    <div class="container-fluid">
-      <div class="container">
-        <div
-          class="text-md-center mx-auto py-4 d-flex flex-column gap-2 gap-md-4 align-items-start align-items-md-center"
-          data-wow-delay=".3s"
-          style="max-width: 600px"
-        >
-          <h1 class="color-accent">Pendaftaran Mahasiswa Baru</h1>
-          <h4 class="text-secondary">
-            Pendaftaran Mahasiswa Baru 2023 Telah Dibuka!
-          </h4>
-          <p class="text-">
-            Sebagai intitusi yang muda mendunia serta unggul dan Islami, kami
-            tidak hanya memberikan mahasiswa/i pendidikan dan pengalaman yang
-            bermanfaat untuk mencapai kesuksesan, namun juga membantu untuk
-            menemukan bidang yang mereka minati.
-          </p>
+    <div class="container-fluid py-2 p-md-5 mt-md-5">
+      <div class="container px-md-5 h-100">
+        <div class="row">
           <a
+            class="col col-md-6 mx-auto text-dark d-block position-relative rounded-3 text-decoration-none overflow-hidden z-0 py-2 px-4 py-md-3 px-md-5 shadow-lg bg-light pmb animate__animated animate__bounceInUp"
             href="#"
-            class="px-4 py-sm-3 px-sm-5 btn color-primary text-light rounded-pill carousel-content-btn1"
-            >Daftar Sekarang</a
           >
+            <h3 class="">Pendaftaran Mahasiswa Baru</h3>
+            <p class="small">
+              Sebagai intitusi yang muda mendunia serta unggul dan Islami, kami
+              tidak hanya memberikan mahasiswa/i pendidikan dan pengalaman yang
+              bermanfaat untuk mencapai kesuksesan, namun juga membantu untuk
+              menemukan bidang yang mereka minati.
+            </p>
+            <div class="corner" href="#">
+              <i class="bi bi-arrow-right text-light"></i>
+            </div>
+          </a>
         </div>
       </div>
     </div>
 
     <!-- pendidikan -->
-    <div class="container-fluid">
-      <div class="container">
+    <div
+      class="container-fluid vh-100 d-flex flex-xl-column align-items-center justify-content-center"
+    >
+      <div class="container d-flex flex-column gap-md-5">
         <h1 class="text-center border-bottom py-3">Akademik</h1>
-        <div class="row py-3 d-flex gap-3 gap-md-5 overflow-auto px-md-5 scroll">
+        <div
+          class="row py-3 d-flex gap-3 gap-md-5 overflow-auto px-md-5 scroll"
+        >
           <div
-            class="col-12 col-sm-6 col-md-4 col-xl-3  rounded-5 overflow-hidden border-0 shadow p-3 card"
+            data-aos="fade-up"
+            class="col-12 col-sm-6 col-md-4 col-xl-3 rounded-5 overflow-hidden border-0 shadow p-3 card"
+            data-aos="fade-right"
           >
-            <div class="container bg-secondary-subtle rounded-4 d-flex align-items-center justify-content-center">
+            <div
+              class="container bg-secondary-subtle rounded-4 d-flex align-items-center justify-content-center"
+            >
               <img
                 src="https://i.ibb.co/gRpP2Lm/icons8-online-128.png"
                 class="card-img-top p-5 m-2 m-md-3"
@@ -215,23 +214,21 @@
               />
             </div>
             <div class="card-body p-0 pt-2">
-              <h5 class="card-title fw-bold text-dark ">Beasiswa</h5>
+              <h5 class="card-title fw-bold text-dark">Program</h5>
               <p class="card-text fw-bold text-secondary">
-                Berbagai macam Beasiswa
+                Lorem, ipsum dolor.
               </p>
-
-              <a
-                href="https://freesnippetcode.blogspot.com/"
-                target="#"
-                class="btn color-primary w-100 rounded-5 text-light"
-                >Go now</a
-              >
+              <button class="btn w-100 rounded-5 text-light color-primary btn-acd">Selengkapnya</button>
             </div>
           </div>
           <div
-            class="col-12 col-sm-6 col-md-4 col-xl-3  rounded-5 overflow-hidden border-0 shadow p-3 card"
+            data-aos="fade-up"
+            class="col-12 col-sm-6 col-md-4 col-xl-3 rounded-5 overflow-hidden border-0 shadow p-3 card"
+            data-aos="fade-right"
           >
-            <div class="container bg-secondary-subtle rounded-4 d-flex align-items-center justify-content-center">
+            <div
+              class="container bg-secondary-subtle rounded-4 d-flex align-items-center justify-content-center"
+            >
               <img
                 src="https://i.ibb.co/gRpP2Lm/icons8-online-128.png"
                 class="card-img-top p-5 m-2 m-md-3"
@@ -239,23 +236,21 @@
               />
             </div>
             <div class="card-body p-0 pt-2">
-              <h5 class="card-title fw-bold text-dark ">Beasiswa</h5>
+              <h5 class="card-title fw-bold text-dark">Akreditasi</h5>
               <p class="card-text fw-bold text-secondary">
-                Berbagai macam Beasiswa
+                Lorem, ipsum dolor.
               </p>
-
-              <a
-                href="https://freesnippetcode.blogspot.com/"
-                target="#"
-                class="btn color-primary w-100 rounded-5 text-light"
-                >Go now</a
-              >
+              <button class="btn w-100 rounded-5 text-light color-primary btn-acd">Selengkapnya</button>
             </div>
           </div>
           <div
-            class="col-12 col-sm-6 col-md-4 col-xl-3  rounded-5 overflow-hidden border-0 shadow p-3 card"
+            data-aos="fade-up"
+            class="col-12 col-sm-6 col-md-4 col-xl-3 rounded-5 overflow-hidden border-0 shadow p-3 card"
+            data-aos="fade-right"
           >
-            <div class="container bg-secondary-subtle rounded-4 d-flex align-items-center justify-content-center">
+            <div
+              class="container bg-secondary-subtle rounded-4 d-flex align-items-center justify-content-center"
+            >
               <img
                 src="https://i.ibb.co/gRpP2Lm/icons8-online-128.png"
                 class="card-img-top p-5 m-2 m-md-3"
@@ -263,23 +258,21 @@
               />
             </div>
             <div class="card-body p-0 pt-2">
-              <h5 class="card-title fw-bold text-dark ">Beasiswa</h5>
+              <h5 class="card-title fw-bold text-dark">Prestasi</h5>
               <p class="card-text fw-bold text-secondary">
-                Berbagai macam Beasiswa
+                Lorem, ipsum dolor.
               </p>
-
-              <a
-                href="https://freesnippetcode.blogspot.com/"
-                target="#"
-                class="btn color-primary w-100 rounded-5 text-light"
-                >Go now</a
-              >
+              <button class="btn w-100 rounded-5 text-light color-primary btn-acd">Selengkapnya</button>
             </div>
           </div>
           <div
-            class="col-12 col-sm-6 col-md-4 col-xl-3  rounded-5 overflow-hidden border-0 shadow p-3 card"
+            data-aos="fade-up"
+            class="col-12 col-sm-6 col-md-4 col-xl-3 rounded-5 overflow-hidden border-0 shadow p-3 card"
+            data-aos="fade-right"
           >
-            <div class="container bg-secondary-subtle rounded-4 d-flex align-items-center justify-content-center">
+            <div
+              class="container bg-secondary-subtle rounded-4 d-flex align-items-center justify-content-center"
+            >
               <img
                 src="https://i.ibb.co/gRpP2Lm/icons8-online-128.png"
                 class="card-img-top p-5 m-2 m-md-3"
@@ -287,23 +280,21 @@
               />
             </div>
             <div class="card-body p-0 pt-2">
-              <h5 class="card-title fw-bold text-dark ">Beasiswa</h5>
+              <h5 class="card-title fw-bold text-dark">Internasional</h5>
               <p class="card-text fw-bold text-secondary">
-                Berbagai macam Beasiswa
+                Lorem, ipsum dolor.
               </p>
-
-              <a
-                href="https://freesnippetcode.blogspot.com/"
-                target="#"
-                class="btn color-primary w-100 rounded-5 text-light"
-                >Go now</a
-              >
+              <button class="btn w-100 rounded-5 text-light color-primary btn-acd">Selengkapnya</button>
             </div>
           </div>
           <div
-            class="col-12 col-sm-6 col-md-4 col-xl-3  rounded-5 overflow-hidden border-0 shadow p-3 card"
+            data-aos="fade-up"
+            class="col-12 col-sm-6 col-md-4 col-xl-3 rounded-5 overflow-hidden border-0 shadow p-3 card"
+            data-aos="fade-right"
           >
-            <div class="container bg-secondary-subtle rounded-4 d-flex align-items-center justify-content-center">
+            <div
+              class="container bg-secondary-subtle rounded-4 d-flex align-items-center justify-content-center"
+            >
               <img
                 src="https://i.ibb.co/gRpP2Lm/icons8-online-128.png"
                 class="card-img-top p-5 m-2 m-md-3"
@@ -311,20 +302,108 @@
               />
             </div>
             <div class="card-body p-0 pt-2">
-              <h5 class="card-title fw-bold text-dark ">Beasiswa</h5>
+              <h5 class="card-title fw-bold text-dark">Beasiswa</h5>
               <p class="card-text fw-bold text-secondary">
-                Berbagai macam Beasiswa
+                Lorem, ipsum dolor.
               </p>
-
-              <a
-                href="https://freesnippetcode.blogspot.com/"
-                target="#"
-                class="btn color-primary w-100 rounded-5 text-light"
-                >Go now</a
-              >
+              <button class="btn w-100 rounded-5 text-light color-primary btn-acd">Selengkapnya</button>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- berita -->
+    <div class="container-fluid pb-5">
+      <div class="container pt-2 pb-md-5">
+        <!-- <div class="h1 text-center text-dark">My Cards Light</div> -->
+        <h1
+          class="text-center border-bottom mb-3 mb-md-5 py-3"
+          id="pageHeaderTitle"
+        >
+          Berita
+        </h1>
+
+        <article class="postcard light" data-aos="zoom-out-right">
+          <a class="img_link" href="#">
+            <img
+              class="img"
+              src="https://www.umy.ac.id/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-08-at-13.26.28-e1699424829910.jpeg"
+              alt="Image Title"
+            />
+          </a>
+          <div class="text text-dark">
+            <h1 class="title blue">
+              <a href="#"
+                >Tanggapi Hasil Keputusan MKMK, Dekan FH UMY Tekankan Perlunya
+                Moralitas dan Etika Dalam Praktik Bernegara</a
+              >
+            </h1>
+            <div class="subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="bi bi-calendar3 me-2"></i>Wed, Nov 8th 2020
+              </time>
+            </div>
+            <div class="bar"></div>
+            <div class="preview-txt">
+              Menanggapi hasil putusan dari Majelis Kehormatan Mahkamah
+              Konstitusi (MKMK) terkait dugaan pelanggaran kode etik oleh hakim
+              Mahkamah Konstitusi (MK), Dekan Fakultas Hukum Universitas
+              Muhammadiyah Yogyakarta (UMY) Iwan Satriawan, S.H., MCL., Ph.D.
+              mengatakan bahwa hasil putusan merupakan teguran keras bagi
+              moralitas dan etika seorang hakim MK. Menurutnya, MK yang
+              merupakan lembaga istimewa yang tidak memiliki pengawasan sudah
+              seharusnya diisi oleh hakim yang tinggi secara tingkat moralitas
+              dan etika, sehingga dapat diterapkan dalam praktik bernegara.
+            </div>
+            <ul class="tagbox">
+              <li class="item">Visit<i class="bi bi-arrow-right ms-2"></i></li>
+            </ul>
+          </div>
+        </article>
+        <article class="postcard light" data-aos="zoom-out-left">
+          <a class="img_link" href="#">
+            <img
+              class="img"
+              src="https://www.umy.ac.id/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-04-at-15.56.55-scaled-e1699424529684.jpeg"
+              alt="Image Title"
+            />
+          </a>
+          <div class="text text-dark">
+            <h1 class="title red">
+              <a href="#"
+                >Benturan Peradaban Berpotensi Jadi Sumber Konflik Internasional
+              </a>
+            </h1>
+            <div class="subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="bi bi-calendar3 me-2"></i>Sa, Nov 4th 2023
+              </time>
+            </div>
+            <div class="bar"></div>
+            <div class="preview-txt">
+              Politik internasional sedang memasuki fase baru, dimana konflik
+              antar peradaban akan menjadi salah satu fase terkini dalam evolusi
+              konflik di sistem politik internasional modern. Dalam skala
+              internasional, perkembangan peradaban dari berbagai bangsa selalu
+              dianggap wajar ketika menghasilkan kebudayaan yang mewujudkan
+              perdamaian. Padahal, menurut Guru Besar Universitas Muhammadiyah
+              Yogyakarta (UMY) di bidang politik internasional dan diplomasi
+              kebudayaan Prof. Dr. Tulus Warsito, M.Si., dinamika politik
+              internasional seperti konflik juga dapat dikategorikan sebagai
+              titik balik peradaban.
+            </div>
+            <ul class="tagbox">
+              <li class="item">Visit<i class="bi bi-arrow-right ms-2"></i></li>
+            </ul>
+          </div>
+        </article>
+        <a
+          href="#"
+          class="color-primary py-2 px-4 rounded-5 text-light float-md-end"
+          data-aos="fade-right"
+          >Berita Lainnya<i class="bi bi-arrow-right ms-2"></i
+        ></a>
       </div>
     </div>
 
@@ -334,11 +413,13 @@
         <div class="container">
           <div class="row">
             <div class="col border-bottom">
-              <p class="fs-5 py-3">Universitas Muhammadiyah Yogyakarta</p>
+              <p class="fs-5 py-3" data-aos="fade-right">
+                Universitas Muhammadiyah Yogyakarta
+              </p>
             </div>
           </div>
           <div class="row pb-4 pb-md-0">
-            <div class="col-lg-4">
+            <div class="col-lg-4" data-aos="fade-up">
               <h4 class="py-3">About us</h4>
               <p>
                 Lorem Ipsum ist einfach Dummy-Text der Druck- und Satzindustrie.
@@ -348,64 +429,43 @@
               </p>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up">
               <h4 class="py-3">Information</h4>
               <ul class="address1 p-0">
                 <li>
-                  <i class="fa fa-map-marker"></i>Kampus Terpadu UMY Jl.
+                  <i class="bi bi-geo-alt-fill"></i>Kampus Terpadu UMY Jl.
                   Brawijaya, Kasihan, Bantul Yogyakarta 55183
                 </li>
                 <li>
-                  <i class="fa fa-envelope"></i
+                  <i class="bi bi-envelope-fill"></i
                   ><a href="mailto:#">bhp@umy.ac.id</a>
                 </li>
                 <li>
-                  <i class="fa fa-mobile" aria-hidden="true"></i>
+                  <i class="bi bi-phone-fill"></i>
                   <a href="tel:12 34 56 78 90">62 274 387656</a>
                 </li>
               </ul>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up">
               <h4 class="py-3">Follow us</h4>
               <ul class="social-icon p-0 mb-0 float-start">
-                <li class="d-inline-block">
+                <li class="d-inline-block me-2">
+                  <a href="#"><i class="bi bi-facebook text-light fs-2"></i></a>
+                </li>
+                <li class="d-inline-block me-2">
                   <a href="#"
-                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ><i class="bi bi-instagram text-light fs-2"></i
                   ></a>
                 </li>
-                <li class="d-inline-block">
-                  <a href="#"
-                    ><i class="fa fa-instagram" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li class="d-inline-block">
-                  <a href="#"
-                    ><i class="fa fa-twitter" aria-hidden="true"></i
-                  ></a>
+                <li class="d-inline-block me-2">
+                  <a href="#"><i class="bi bi-youtube text-light fs-2"></i></a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <!-- <div class="footer-bottom bg-dark ">
-        <div class="container">
-          <div class="row d-flex text-md-center p-0">
-            <div class="col-sm-5">
-              <p class="copyright text-uppercase">Copyright © 2018</p>
-            </div>
-            <div class="col-sm-7">
-              <ul class="p-0 d-md-flex gap-md-3">
-                <li><a href="#" class="text-decoration-none text-light">Home</a></li>
-                <li><a href="#" class="text-decoration-none text-light">About Us</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Our services</a></li>
-                <li><a href="#" class="text-decoration-none text-light">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </footer>
 
     <!-- js -->
@@ -414,6 +474,10 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>
