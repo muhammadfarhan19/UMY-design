@@ -1,7 +1,6 @@
 :root {
-
   --color-primary: #004029;
-  --color-secondary: #F6B800;
+  --color-secondary: #f6b800;
   --color-accent: #932520;
 }
 
@@ -111,11 +110,35 @@
   opacity: 1;
 }
 
-/* footer */
-
-li {
-  list-style: none;
+/* akademik */
+.card {
+  transition: all 0.15s ease;
 }
+
+.card:hover {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1), 0 10px 8px rgba(0, 0, 0, 0.015);
+}
+
+.card-body .card-title {
+  letter-spacing: 0.3px;
+  font-size: 24px;
+}
+
+.card-text {
+  font-size: 15px;
+}
+
+
+.container:hover > img {
+  transform: scale(1.2);
+}
+
+.container img {
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+/* footer */
 
 .social-icon li i {
   font-size: 14px;
